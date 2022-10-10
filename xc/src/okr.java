@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class okr {
     public static void main(String[] args) {
-
+ /*
         System.out.println("Input 1 or 0");
         Scanner scanner=new Scanner(System.in);
         int x= scanner.nextInt();
@@ -14,18 +14,17 @@ public class okr {
                 System.out.println("zero");
             } else System.out.println("I don't know");
         }
-        /*
+         */
+        int k1=0,k2=0;
     for(int i=1;i<=10;i++) {
         if (i % 2 == 0) {
-            System.out.print(i + " ");
+           k1++;
         }
-    }
-        System.out.println();
-        for(int i=1;i<=10;i++) {
         if (i % 3 == 0) {
-            System.out.print(i + " ");
+            k2++;
         }
     }
+        System.out.printf("number of even numbers %d, number of odd numbers %d",k1,k2);
 
-         */
+
     }}
