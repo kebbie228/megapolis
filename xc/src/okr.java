@@ -15,16 +15,12 @@ public class okr {
             } else System.out.println("I don't know");
         }
          */
-        int k1=0,k2=0;
+        int k1=0;
     for(int i=1;i<=10;i++) {
-        if (i % 2 == 0) {
+        if (i % 2 == 0||i% 3 == 0) {
            k1++;
         }
-        if (i % 3 == 0) {
-            k2++;
-        }
+
     }
-        System.out.printf("number of even numbers %d, number of odd numbers %d",k1,k2);
-
-
+        System.out.printf("number of even numbers %d",k1);
     }}
