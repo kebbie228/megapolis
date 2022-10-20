@@ -13,7 +13,7 @@ public class Sorting {
 
         fillRandom();
         print();
-        // bubbleSort();
+        bubbleSort();
 
         //dummySort();
         //shakerSort();
@@ -22,7 +22,7 @@ public class Sorting {
         // insertionSort();
         // selectionSort();
         //combSort();
-        bogoSort();
+       // bogoSort();
         print();
     }
 
