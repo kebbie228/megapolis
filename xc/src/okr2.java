@@ -18,10 +18,10 @@ public class okr2 {
         char x='*';
         for(int i=0;i<=n;i++) {
             for (int j = 0; j <=i; j++){
-                if(i==n && i!=1)
+                if(i==n)
                     System.out.print(x);
                 else {
-                    if (j > 0 && j < i) System.out.print(" ");
+                    if (j > 0 && j<i) System.out.print(" ");
                     else System.out.printf("%c", x);
                 }
             }
