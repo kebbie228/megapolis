@@ -13,16 +13,21 @@ public class okr2 {
      */
 
     public static void main(String[] args) {
-
-        int n= 4;
-        char x='*';
-        for(int i=0;i<=n;i++) {
-            for (int j = 0; j <=i; j++){
-                if(i==n && i!=1)
-                    System.out.print(x);
-                else {
-                    if (j > 0 && j < i) System.out.print(" ");
-                    else System.out.printf("%c", x);
+        int n = 5;
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j < n - i; j++)
+                System.out.print(" ");
+            if (i == n)
+                for (int j = 1; j < n*2; j++) System.out.print("*");
+            else{
+                for (int j = 1; j <= i; j++) {
+                    if (i == n) System.out.print("*" + " ");
+                    else {
+                        if (j == 1) System.out.print("*");
+                        else if (j == i) System.out.print("*" );
+                        else System.out.print(" ");
+                        System.out.print(" ");
+                    }
                 }
             }
             System.out.println();
