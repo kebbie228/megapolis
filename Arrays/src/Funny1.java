@@ -7,7 +7,6 @@ public class Funny1 {
             System.out.printf("%22s%d\n",left,(long)n*n);
             n=n*10+1;
         }
-
    */
         String c = "5";
         String s = "";

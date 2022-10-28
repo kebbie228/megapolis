@@ -13,8 +13,8 @@ public class Scramble {
         for(int i=0;i<second.length();i++) {
             int index = sb.toString().indexOf(second.charAt(i));
             if (index == -1) flag = false;
-            //else sb.delete(index, index + 1);
-            else sb.setCharAt(index, ((Character)second.charAt(i)).toString().toUpperCase().charAt(0));
+            else sb.delete(index, index + 1);
+           // else sb.setCharAt(index, ((Character)second.charAt(i)).toString().toUpperCase().charAt(0));
         }
         System.out.println(flag);
         System.out.println(sb);
