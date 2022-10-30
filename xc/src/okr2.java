@@ -39,14 +39,14 @@ public class okr2 {
 
         int change= random.nextInt(51,99);
         System.out.println(change);
-      int min=51,k=0;
+      int min=50,k=0;
       int one=0,two=0,five=0,ten=0,twenty=0,fifty=0;
-  for(int i=0;i<100;i++){
-      if(change==51){ one =1;
+  for(int i=0;i<10;i++){
+      if(change==50){ one =1;
           System.out.println("one="+one+" two="+two+" five="+five+" ten="+ten+" twenty="+twenty+" fifty="+fifty);
           return;
       }
-      for(int j=0;j<100;j++) {
+      for(int j=0;j<1;j++) {
           if (min +10<=change) {
               min += 10;
               ten++;
