@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class okr2 {
@@ -13,6 +14,7 @@ public class okr2 {
      */
 
     public static void main(String[] args) {
+        /*
         int n = 5;
         for (int i = 0; i <= n; i++) {
             for (int j = 0; j < n - i; j++)
@@ -31,7 +33,49 @@ public class okr2 {
                 }
             }
             System.out.println();
-        }
+}
+         */
+        Random random=new Random();
+
+        int change= random.nextInt(51,99);
+        System.out.println(change);
+      int min=51,k=0;
+      int one=0,two=0,five=0,ten=0,twenty=0,fifty=0;
+  for(int i=0;i<100;i++){
+      if(change==51){ one =1;
+          System.out.println("one="+one+" two="+two+" five="+five+" ten="+ten+" twenty="+twenty+" fifty="+fifty);
+          return;
+      }
+      for(int j=0;j<100;j++) {
+          if (min +10<=change) {
+              min += 10;
+              ten++;
+          } else if (min +5<=change) {
+              min += 5;
+              five++;
+          } else if (min +2<=change) {
+              min += 2;
+              two++;
+          } else if (min +1<=change){
+              min += 1;
+              one++;
+          }
+      }
+          if (ten == 2) {
+              twenty = ten;
+              ten = 0;
+          }
+          if (five == 2) {
+              ten = five;
+              five = 0;
+          }
+          if (one == 2) {
+              two = one;
+              one = 0;
+          }
+  }
+        System.out.println("one="+one+" two="+two+" five="+five+" ten="+ten+" twenty="+twenty+" fifty="+fifty);
+
 
     }
 }
